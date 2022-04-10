@@ -20,8 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Container */
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1230px;
 	margin: 0 auto;
+	padding: 0 15px
 }
 
 /* Intro */
@@ -586,7 +587,7 @@ footer {
 }
 
 .footer__block--one {
-	max-width: 509px;
+	max-width: 510px;
 	padding-right: 35px;
 }
 
@@ -662,7 +663,6 @@ footer {
 
 .footer__block--two {
 	max-width: 420px;
-	padding-right: auto;
 }
 
 .block__title {
@@ -726,4 +726,14 @@ footer {
 	margin: 0;
 	padding: 0;
 	opacity: 0.9;
+}
+
+@media (max-width: 960px) {
+	.intro__title {
+		font-size: 80px;
+	}
+	
+	.intro__suptitle {
+		font-size: 48px
+	}
 }
