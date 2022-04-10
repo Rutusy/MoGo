@@ -731,9 +731,25 @@ footer {
 @media (max-width: 960px) {
 	.intro__title {
 		font-size: 80px;
+		line-height: 1em;
 	}
 	
 	.intro__suptitle {
-		font-size: 48px
+		font-size: 48px;
+	}
+}
+
+@media (max-height: 870px) {
+	.intro__title {
+		font-size: 80px;
+		line-height: 1em;
+	}
+	
+	.intro__suptitle {
+		font-size: 48px;
+	}
+		
+	.intro__title:after {
+		margin: 20px auto;
 	}
 }
