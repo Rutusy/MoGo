@@ -398,6 +398,7 @@ hr {
     transform: translate3d(-53%, 0px, 0px);
     bottom: 0;
     left: 50%;
+    line-height: 0;
 }
 
 .iphone {
@@ -733,8 +734,41 @@ footer {
 	opacity: 0.9;
 }
 
+/* Burger */
+.burger__menu {
+	display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+	align-items: center;
+    background: #ea8684e6;
+    gap: 0.5em;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    padding: 1em 1em;
+    z-index: 9990;
+}
+
+.header__inner a:last-child {
+	display: none;
+}
 
 /* Media */
+@media (max-height: 777px) {
+	.intro__suptitle {
+		font-size: 50px;
+	}
+
+	.intro__title {
+		font-size: 100px;
+    	line-height: 78px;
+	}
+
+	.intro__title:after {
+		margin: 20px auto;
+	}
+}
+	
 @media (max-width:  1120px) {
 	
 	.section {
@@ -817,6 +851,21 @@ footer {
 		width: 100%;
     	text-align: center;
 	}
+
+	@media (max-height: 777px) {
+		.intro__suptitle {
+			font-size: 50px;
+		}
+
+		.intro__title {
+			font-size: 100px;
+	    	line-height: 78px;
+		}
+
+		.intro__title:after {
+			margin: 20px auto;
+		}
+	}
 }
 
 @media (max-width:  767px) {
@@ -875,5 +924,114 @@ footer {
 }
 
 @media (max-width:  535px) {
+	.intro__suptitle {
+		font-size: 26px;
+	}
 
+	.intro__title {
+		font-size: 44px;
+    	line-height: 42px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.slider__item.active:before  {
+		width: 50%;
+	}
+
+	.slider__num {
+		font-size: 16px;
+		display: block;
+	}
+
+	.about__item,
+	.about_img {
+		height: 80px;
+	}
+
+	.about_img img {
+		width: 130%;
+	}
+
+	.work {
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
+
+	.work__item {
+		padding-left: 70px;
+	    max-width: 100%;
+	    margin-bottom: 2em;
+	}
+
+	.work__logo {
+		position: absolute;
+		display: block;
+	}
+
+	.stats__blocks {
+		flex-direction: column;
+	}
+
+	.stats__item {
+		margin-bottom: 2em;
+	}
+
+	.ipad img {
+		width: 280px;
+	}
+
+	.iphone img {
+		width: 180px;
+	}
+
+	.devices {
+		min-height: 600px;
+	}
+
+	.iphone {
+		left: 20%;
+	}
+
+	.footer__block--one, 
+	.footer__block--two, 
+	.footer__block--three {
+		max-width: 100%;
+	}
+
+	.reviews__slider img {
+		display: none;
+	}
+
+	.block__photos img {
+		width: 150px;
+	}
+
+	.social__subscribe button {
+		width: 90px;
+		font-size: 11px;
+	}
+
+	.social__subscribe input {
+		width: 170px;
+	}
+
+	.header__inner {
+		flex-direction: unset;
+	    align-items: center;
+	}
+
+	.header__inner a:last-child {
+		display: flex;
+		text-decoration: none;
+	}
+
+	.header__inner i {
+		color: white;
+		font-size: 30px;
+		margin: 0 .2em;
+	}
 }

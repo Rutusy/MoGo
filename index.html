@@ -33,6 +33,9 @@
 				<a class="nav__link" href="#">Blog</a>
 				<a class="nav__link" href="#">Contact</a>
 			</nav>
+			<a href="#">
+				<i class="fa fa-bars"></i>
+			</a>
 		</div>
 	</div>
 </header>
@@ -350,6 +353,35 @@
 			<div class="footer__text footer__text--last">© 2016 MoGo free PSD template / Code by Sailen2h</div>
 	</div>
 </footer>
+
+<div class="burger__menu">
+		<a class="burger__link" href="#">About</a>
+		<a class="burger__link" href="#">Services</a>
+		<a class="burger__link" href="#">Work</a>
+		<a class="burger__link" href="#">Blog</a>
+		<a class="burger__link" href="#">Contact</a>
+</div>
+
+<!-- Scripts -->
+<script type="text/javascript">
+	let bar = document.querySelector('.fa-bars');
+	let burger = document.querySelector('.burger__menu');
+/*	bar.parentNode.style.display = "none";
+*/
+	bar.parentNode.addEventListener('click', function(){
+		openBurger();
+	})
+
+	function openBurger() {
+		let status = burger.style.display;
+		if (status == "none") {
+			burger.style.display = "flex";
+		} else {
+			burger.style.display = "none";
+		}
+	}
+</script>
+
 
 </body>
 </html>
